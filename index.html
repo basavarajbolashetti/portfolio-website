@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basavaraj Bolashetti – Premium AI-Crafted Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Exo+2:wght@300;400;600;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Grid Overlay -->
+  <div class="grid-overlay"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>BB<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#certifications" class="nav-link">Certs</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─── HERO ──────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">
+        <span class="terminal-prompt">hello@studio:~$</span>
+        <span class="terminal-cursor"></span>
+      </p>
+      <div class="hero-badge">Premium AI Curated Experience</div>
+      <h1 class="hero-name">Basavaraj<br><span class="accent-name">Bolashetti</span></h1>
+      <div class="hero-role">
+        <span class="role-prefix">// </span>
+        <span id="typed-role"></span>
+        <span class="type-cursor">|</span>
+      </div>
+      <p class="hero-tagline">Crafting premium backend systems, secure cloud platforms, and polished full-stack experiences designed to stand out.</p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="0">0</span><span class="stat-unit">+</span>
+          <span class="stat-label">AI-Crafted Systems</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="5">0</span><span class="stat-unit">+</span>
+          <span class="stat-label">Signature Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="100">0</span><span class="stat-unit">%</span>
+          <span class="stat-label">Trusted Delivery</span>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-code"></i> View Work
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <i class="fas fa-envelope"></i> Hire Me
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orbit-system">
+        <div class="orbit-core">
+          <i class="fas fa-brain core-icon"></i>
+        </div>
+        <div class="orbit orbit-1">
+          <div class="orbit-planet p1"><i class="fas fa-code"></i></div>
+        </div>
+        <div class="orbit orbit-2">
+          <div class="orbit-planet p2"><i class="fas fa-cloud"></i></div>
+        </div>
+        <div class="orbit orbit-3">
+          <div class="orbit-planet p3"><i class="fas fa-lock"></i></div>
+        </div>
+        <div class="orbit orbit-4">
+          <div class="orbit-planet p4"><i class="fas fa-rocket"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─────────────────────────────────────────── -->
+  <section id="about">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">01 // ABOUT</span>
+      <h2 class="section-title">Who Am I?</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card glass" data-aos="fade-right" data-aos-delay="100">
+        <div class="about-avatar">
+          <div class="avatar-ring">
+            <div class="avatar-inner">
+              <span class="avatar-initials">BB</span>
+            </div>
+          </div>
+          <div class="avatar-status">
+            <span class="status-dot"></span> Open to Opportunities
+          </div>
+        </div>
+        <div class="about-details">
+          <div class="detail-row"><i class="fas fa-map-marker-alt"></i> India</div>
+          <div class="detail-row"><i class="fas fa-briefcase"></i> Backend / Full Stack Dev</div>
+          <div class="detail-row"><i class="fas fa-graduation-cap"></i> MCA Graduate</div>
+          <div class="detail-row"><i class="fas fa-code-branch"></i> Node.js & MySQL</div>
+          <div class="detail-row"><i class="fas fa-lock"></i> Cybersecurity Enthusiast</div>
+        </div>
+      </div>
+      <div class="about-text-block" data-aos="fade-left" data-aos-delay="200">
+        <p class="about-bio">
+          I'm an <strong>MCA graduate</strong> with hands-on experience in backend and web development using <strong>Node.js and MySQL</strong>. 
+          I specialize in building <strong>REST APIs</strong>, integrating systems, and working with real-world data.
+        </p>
+        <p class="about-bio">
+          I have a strong interest in <strong>cybersecurity</strong>, including secure application development and threat-aware systems. 
+          I'm looking to contribute to <strong>scalable backend solutions</strong> in a fast-paced environment where innovation and quality matter.
+        </p>
+        <div class="about-tags">
+          <span class="tag">Backend Development</span>
+          <span class="tag">Node.js & Express</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">React.js</span>
+          <span class="tag">Cybersecurity</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ────────────────────────────────────────── -->
+  <section id="skills">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">02 // SKILLS</span>
+      <h2 class="section-title">Tech Arsenal</h2>
+    </div>
+    <div class="skills-wrapper">
+      <div class="skills-bars-col" data-aos="fade-right" data-aos-delay="100">
+        <h3 class="skills-subtitle">Core Proficiencies</h3>
+        <div id="skill-bars-container"></div>
+      </div>
+      <div class="skills-icons-col" data-aos="fade-left" data-aos-delay="200">
+        <h3 class="skills-subtitle">Tools & Technologies</h3>
+        <div id="skill-icons-container" class="skill-icons-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ──────────────────────────────────────── -->
+  <section id="projects">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">03 // PROJECTS</span>
+      <h2 class="section-title">Work Portfolio</h2>
+    </div>
+    <div class="projects-grid" id="projects-container">
+      <!-- JS-rendered -->
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ────────────────────────────────────── -->
+  <section id="experience">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">04 // EXPERIENCE</span>
+      <h2 class="section-title">Work History</h2>
+    </div>
+    <div class="timeline" id="timeline-container">
+      <!-- JS-rendered -->
+    </div>
+  </section>
+
+  <!-- ─── CERTIFICATIONS ────────────────────────────────── -->
+  <section id="certifications">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">05 // CERTIFICATIONS</span>
+      <h2 class="section-title">Credentials</h2>
+    </div>
+    <div class="certs-grid" id="certs-container">
+      <!-- JS-rendered -->
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ───────────────────────────────────────── -->
+  <section id="contact">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">06 // CONTACT</span>
+      <h2 class="section-title">Get In Touch</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+        <p class="contact-intro">Open to backend development roles, full-stack opportunities, and cybersecurity collaborations. Let's build something great together.</p>
+        <div class="contact-items">
+          <a href="tel:+917892601698" class="contact-item glass">
+            <span class="contact-icon"><i class="fas fa-phone"></i></span>
+            <div><span class="contact-label">Phone</span><span class="contact-value">+91 7892601698</span></div>
+          </a>
+          <a href="mailto:bolshettibasavaraj@gmail.com" class="contact-item glass">
+            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+            <div><span class="contact-label">Email</span><span class="contact-value">bolshettibasavaraj@gmail.com</span></div>
+          </a>
+          <a href="https://github.com/basavarajbolashetti" target="_blank" rel="noopener noreferrer" class="contact-item glass">
+            <span class="contact-icon"><i class="fab fa-github"></i></span>
+            <div><span class="contact-label">GitHub</span><span class="contact-value">github.com/basavarajbolashetti</span></div>
+          </a>
+          <a href="https://www.linkedin.com/in/basavaraj-b-2321b4201/" target="_blank" rel="noopener noreferrer" class="contact-item glass">
+            <span class="contact-icon"><i class="fab fa-linkedin"></i></span>
+            <div><span class="contact-label">LinkedIn</span><span class="contact-value">linkedin.com/in/basavaraj-b...</span></div>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form glass" id="contact-form" data-aos="fade-left" data-aos-delay="200" novalidate>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Jane Smith" autocomplete="off" />
+          <span class="form-error" id="name-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="jane@company.com" autocomplete="off" />
+          <span class="form-error" id="email-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Collaboration" autocomplete="off" />
+          <span class="form-error" id="subject-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell me about the role or project..."></textarea>
+          <span class="form-error" id="message-error"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+        <div id="form-success" class="form-success" style="display:none;">
+          <i class="fas fa-check-circle"></i> Message sent successfully!
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo"><span class="logo-bracket">&lt;</span>BB<span class="logo-bracket">/&gt;</span></span>
+      <p class="footer-copy">© 2026 Basavaraj Bolashetti. Built with precision.</p>
+      <div class="footer-links">
+        <a href="https://github.com/basavarajbolashetti" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/basavaraj-b-2321b4201/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:bolshettibasavaraj@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+917892601698"><i class="fas fa-phone"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
