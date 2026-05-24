@@ -222,6 +222,15 @@ section {
   background: rgba(244,197,66,0.12);
   transform: translateY(-3px);
 }
+.btn-resume {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: var(--white);
+  box-shadow: 0 0 20px rgba(139,92,246,0.35);
+}
+.btn-resume:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 40px rgba(139,92,246,0.45), 0 10px 30px rgba(0,0,0,0.35);
+}
 .btn-full { width: 100%; justify-content: center; }
 
 /* ── HERO ───────────────────────────────────────────────── */
@@ -584,7 +593,7 @@ section {
 /* Skill Icons */
 .skill-icons-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 14px;
 }
 .skill-icon-card {
@@ -708,6 +717,37 @@ section {
   border-color: rgba(244,197,66,0.4);
   color: var(--white);
 }
+
+/* Featured Project Badge */
+.project-card.featured {
+  border-color: rgba(244,197,66,0.4);
+  position: relative;
+}
+.project-card.featured::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--accent));
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.featured-badge {
+  position: absolute;
+  top: 12px; right: 12px;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(244,197,66,0.2), rgba(244,197,66,0.1));
+  border: 1px solid rgba(244,197,66,0.4);
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.featured-badge i { font-size: 0.6rem; }
 
 /* ── EXPERIENCE ─────────────────────────────────────────── */
 #experience { background: linear-gradient(180deg, transparent, rgba(0,60,30,0.07), transparent); }
@@ -875,6 +915,73 @@ section {
 
 /* ── CONTACT ────────────────────────────────────────────── */
 #contact {}
+
+/* ── HIRE ME BANNER ─────────────────────────────────────── */
+.hire-banner {
+  background: linear-gradient(135deg, rgba(244,197,66,0.08), rgba(139,92,246,0.08));
+  border-top: 1px solid rgba(244,197,66,0.2);
+  border-bottom: 1px solid rgba(244,197,66,0.2);
+  text-align: center;
+}
+.hire-content { max-width: 800px; margin: 0 auto; }
+.hire-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  border-radius: 999px;
+  background: rgba(0,255,157,0.12);
+  border: 1px solid rgba(0,255,157,0.3);
+  color: #00ff9d;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.8px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+.status-indicator {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #00ff9d;
+  box-shadow: 0 0 10px #00ff9d;
+  animation: pulse-dot 2s infinite;
+}
+.hire-title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  color: var(--white);
+  margin-bottom: 16px;
+}
+.hire-text {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+.hire-text strong { color: var(--gold); }
+.hire-cta {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.hire-highlights {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+.highlight-item i { color: #00ff9d; }
 
 .contact-grid {
   display: grid;
@@ -1117,11 +1224,13 @@ footer {
   .timeline::before { left: 12px; }
   .timeline-item { padding-left: 44px; }
   .timeline-dot { left: 4px; }
-  .skill-icons-grid { grid-template-columns: repeat(3, 1fr); }
+  .skill-icons-grid { grid-template-columns: repeat(4, 1fr); }
   .footer-inner { flex-direction: column; text-align: center; }
 }
 
 @media (max-width: 480px) {
   .hero-name { font-size: 2.4rem; }
   .skill-icons-grid { grid-template-columns: repeat(2, 1fr); }
+  .hire-highlights { gap: 16px; }
+  .hire-cta { flex-direction: column; align-items: center; }
 }

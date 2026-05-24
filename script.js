@@ -4,42 +4,78 @@
 
 /* ── DATA ───────────────────────────────────────────────── */
 const skillBars = [
-  { name: 'Backend Development (Node.js)', percent: 90, color: 'linear-gradient(90deg,#da70d6,#ff69b4)' },
-  { name: 'REST APIs & System Integration', percent: 88, color: 'linear-gradient(90deg,#da70d6,#ba55d3)' },
-  { name: 'MySQL & Database Design', percent: 85, color: 'linear-gradient(90deg,#ba55d3,#ff69b4)' },
-  { name: 'React.js Frontend', percent: 82, color: 'linear-gradient(90deg,#ff69b4,#da70d6)' },
-  { name: 'Full Stack Development', percent: 87, color: 'linear-gradient(90deg,#a78bfa,#7c3aed)' },
-  { name: 'Cybersecurity & Secure Code', percent: 80, color: 'linear-gradient(90deg,#ffd700,#ff69b4)' },
+  { name: 'Java & Spring Boot', percent: 90, color: 'linear-gradient(90deg,#f89820,#5382a1)' },
+  { name: 'Backend Development (Node.js/Express)', percent: 88, color: 'linear-gradient(90deg,#68a063,#3c873a)' },
+  { name: 'Python (Flask, AI/ML)', percent: 85, color: 'linear-gradient(90deg,#3776ab,#ffd43b)' },
+  { name: 'React.js & Frontend', percent: 85, color: 'linear-gradient(90deg,#61dafb,#764abc)' },
+  { name: 'SQL & Database Design (MySQL)', percent: 88, color: 'linear-gradient(90deg,#00758f,#f29111)' },
+  { name: 'REST APIs & Microservices', percent: 87, color: 'linear-gradient(90deg,#da70d6,#ba55d3)' },
+  { name: 'Git/GitHub & DevOps', percent: 82, color: 'linear-gradient(90deg,#f1502f,#6e5494)' },
 ];
 
 const skillIcons = [
-  { icon: 'fab fa-js',              label: 'JavaScript', color: '#f7df1e' },
-  { icon: 'fab fa-node-js',         label: 'Node.js',    color: '#76c042' },
-  { icon: 'fab fa-react',           label: 'React',      color: '#61dafb' },
+  { icon: 'fab fa-java',            label: 'Java',       color: '#f89820' },
+  { icon: 'fas fa-leaf',            label: 'Spring Boot',color: '#6db33f' },
   { icon: 'fab fa-python',          label: 'Python',     color: '#3776ab' },
-  { icon: 'fas fa-database',        label: 'MySQL',      color: '#00758b' },
-  { icon: 'fas fa-code-branch',     label: 'Git',        color: '#f1502f' },
-  { icon: 'fas fa-shield-alt',      label: 'Security',   color: '#ff69b4' },
-  { icon: 'fas fa-server',          label: 'Express',    color: '#90c53f' },
+  { icon: 'fab fa-js',              label: 'JavaScript', color: '#f7df1e' },
+  { icon: 'fab fa-node-js',         label: 'Node.js',    color: '#68a063' },
+  { icon: 'fab fa-react',           label: 'React',      color: '#61dafb' },
+  { icon: 'fas fa-database',        label: 'MySQL',      color: '#00758f' },
+  { icon: 'fas fa-server',          label: 'Express.js', color: '#90c53f' },
   { icon: 'fas fa-cube',            label: 'REST API',   color: '#da70d6' },
+  { icon: 'fab fa-html5',           label: 'HTML5',      color: '#e34f26' },
+  { icon: 'fab fa-css3-alt',        label: 'CSS3',       color: '#1572b6' },
   { icon: 'fab fa-github',          label: 'GitHub',     color: '#ffffff' },
-  { icon: 'fas fa-lock',            label: 'Cryptography',color: '#ffd700' },
-  { icon: 'fas fa-network-wired',   label: 'Integration',color: '#ba55d3' },
+  { icon: 'fas fa-code-branch',     label: 'Git',        color: '#f1502f' },
+  { icon: 'fas fa-brain',           label: 'AI/ML',      color: '#ff6f61' },
+  { icon: 'fas fa-link',            label: 'Blockchain', color: '#f7931a' },
+  { icon: 'fas fa-microchip',       label: 'IoT',        color: '#00d4aa' },
 ];
 
 const projects = [
   {
-    title: 'Jewelry Shop Management System',
-    desc: 'Web-based system with admin and user roles. Features inventory management, sales tracking, and a chatbot for user queries.',
-    icon: '💎',
-    tech: ['Node.js', 'Express', 'MySQL', 'React', 'Chatbot'],
+    title: 'AI-Powered Online Exam Monitoring System',
+    desc: 'Advanced proctoring system using YOLO object detection and Face Recognition to detect cheating in real-time. Implements multi-face detection, gaze tracking, and automated flagging for suspicious behavior.',
+    icon: '🤖',
+    tech: ['Python', 'YOLO', 'OpenCV', 'Face Recognition', 'Flask', 'AI/ML'],
+    github: 'https://github.com/basavarajbolashetti',
+    featured: true
+  },
+  {
+    title: 'E-commerce Platform',
+    desc: 'Full-stack e-commerce application with Java Spring Boot backend. Features user authentication, product catalog, shopping cart, order management, and payment integration with responsive React frontend.',
+    icon: '🛒',
+    tech: ['Java', 'Spring Boot', 'MySQL', 'React', 'REST API', 'JWT Auth'],
+    github: 'https://github.com/basavarajbolashetti',
+    featured: true
+  },
+  {
+    title: 'Blockchain-Based Charity Donation System',
+    desc: 'Transparent donation platform using blockchain technology. Ensures donation traceability, prevents fraud, and provides immutable transaction records for complete accountability.',
+    icon: '💝',
+    tech: ['Blockchain', 'Solidity', 'Web3.js', 'Node.js', 'React', 'Ethereum'],
+    github: 'https://github.com/basavarajbolashetti',
+    featured: true
+  },
+  {
+    title: 'Blockchain-Based Voting System',
+    desc: 'Secure and transparent electronic voting system leveraging blockchain for tamper-proof vote recording. Features voter verification, real-time results, and complete audit trail.',
+    icon: '🗳️',
+    tech: ['Blockchain', 'Smart Contracts', 'Node.js', 'React', 'Cryptography'],
     github: 'https://github.com/basavarajbolashetti'
   },
   {
-    title: 'E-commerce Website',
-    desc: 'Full-stack app with authentication and cart system. Built REST APIs using Node.js (Express) with MySQL integration and responsive React frontend.',
-    icon: '🛍️',
-    tech: ['Node.js', 'Express', 'MySQL', 'React', 'Auth'],
+    title: 'IoT Smart Circuit Breaker System',
+    desc: 'Intelligent home automation system for remote monitoring and control of electrical circuits. Features real-time power consumption tracking, overload protection, and mobile app control.',
+    icon: '⚡',
+    tech: ['IoT', 'Arduino', 'Node.js', 'MQTT', 'React Native', 'Firebase'],
+    github: 'https://github.com/basavarajbolashetti'
+  },
+  {
+    title: 'Jewelry Shop Management System',
+    desc: 'Comprehensive web-based system with admin and user roles. Features inventory management, sales tracking, billing, customer management, and AI chatbot for user queries.',
+    icon: '💎',
+    tech: ['Node.js', 'Express', 'MySQL', 'React', 'Chatbot'],
     github: 'https://github.com/basavarajbolashetti'
   }
 ];
@@ -103,11 +139,11 @@ const certifications = [
 ];
 
 const typedRoles = [
-  'AI-Optimized Systems',
-  'Backend Maestro',
-  'Cloud Performance Architect',
-  'Secure Infrastructure Designer',
-  'Premium Experience Builder',
+  'Software Engineer',
+  'Java Developer',
+  'Full Stack Developer',
+  'Backend Developer',
+  'Python Developer',
 ];
 
 /* ── AOS ─────────────────────────────────────────────────── */
@@ -252,7 +288,8 @@ function renderSkillIcons() {
 function renderProjects() {
   const container = document.getElementById('projects-container');
   container.innerHTML = projects.map((p, i) => `
-    <div class="project-card" data-aos="fade-up" data-aos-delay="${i * 100}">
+    <div class="project-card ${p.featured ? 'featured' : ''}" data-aos="fade-up" data-aos-delay="${i * 100}">
+      ${p.featured ? '<span class="featured-badge"><i class="fas fa-star"></i> Featured</span>' : ''}
       <div class="project-header">
         <h3 class="project-title">${p.title}</h3>
         <span class="project-icon">${p.icon}</span>
@@ -263,7 +300,7 @@ function renderProjects() {
       </div>
       <div class="project-links">
         <a href="${p.github}" target="_blank" rel="noopener noreferrer" class="project-link">
-          <i class="fab fa-github"></i> Code
+          <i class="fab fa-github"></i> View Code
         </a>
       </div>
     </div>

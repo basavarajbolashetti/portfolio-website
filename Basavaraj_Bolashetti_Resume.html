@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basavaraj Bolashetti - Software Engineer Resume</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 11pt;
+      line-height: 1.5;
+      color: #333;
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 0.5in;
+      background: white;
+    }
+    
+    /* Header */
+    .header {
+      text-align: center;
+      border-bottom: 2px solid #2563eb;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+    }
+    .name {
+      font-size: 24pt;
+      font-weight: 700;
+      color: #1e3a8a;
+      margin-bottom: 5px;
+      letter-spacing: 1px;
+    }
+    .title {
+      font-size: 12pt;
+      color: #4b5563;
+      margin-bottom: 10px;
+    }
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      font-size: 10pt;
+    }
+    .contact-info a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .contact-info span { color: #6b7280; }
+    
+    /* Sections */
+    .section {
+      margin-bottom: 18px;
+    }
+    .section-title {
+      font-size: 12pt;
+      font-weight: 700;
+      color: #1e3a8a;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #d1d5db;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+    }
+    
+    /* Summary */
+    .summary {
+      text-align: justify;
+      color: #4b5563;
+    }
+    
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+    .skill-category {
+      display: flex;
+      gap: 8px;
+    }
+    .skill-label {
+      font-weight: 600;
+      color: #374151;
+      min-width: 140px;
+    }
+    .skill-items { color: #4b5563; }
+    
+    /* Experience & Projects */
+    .entry {
+      margin-bottom: 14px;
+    }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+    .entry-title {
+      font-weight: 700;
+      color: #1f2937;
+      font-size: 11pt;
+    }
+    .entry-company {
+      color: #2563eb;
+      font-weight: 600;
+    }
+    .entry-date {
+      color: #6b7280;
+      font-size: 10pt;
+    }
+    .entry-location {
+      color: #6b7280;
+      font-size: 10pt;
+      font-style: italic;
+    }
+    .entry-points {
+      margin-left: 18px;
+      color: #4b5563;
+    }
+    .entry-points li {
+      margin-bottom: 3px;
+    }
+    .tech-stack {
+      font-size: 10pt;
+      color: #6b7280;
+      margin-top: 4px;
+    }
+    .tech-stack strong { color: #374151; }
+    
+    /* Education */
+    .edu-entry {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    .edu-degree {
+      font-weight: 700;
+      color: #1f2937;
+    }
+    .edu-school { color: #4b5563; }
+    
+    /* Certifications */
+    .cert-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px;
+    }
+    .cert-item { color: #4b5563; }
+    .cert-issuer { color: #6b7280; font-size: 10pt; }
+    
+    /* Print Styles */
+    @media print {
+      body { padding: 0.4in; }
+      .section { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1 class="name">BASAVARAJ BOLASHETTI</h1>
+    <p class="title">Software Engineer | Java Developer | Full Stack Developer</p>
+    <div class="contact-info">
+      <span>+91 7892601698</span>
+      <a href="mailto:bolshettibasavaraj@gmail.com">bolshettibasavaraj@gmail.com</a>
+      <a href="https://www.linkedin.com/in/basavaraj-b-2321b4201/">LinkedIn</a>
+      <a href="https://github.com/basavarajbolashetti">GitHub</a>
+      <span>Bengaluru, India</span>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2 class="section-title">Professional Summary</h2>
+    <p class="summary">
+      Results-driven MCA graduate with hands-on experience in Java, Spring Boot, Node.js, and React. 
+      Proven track record of building scalable backend systems, RESTful APIs, and full-stack web applications through 
+      2 technical internships and 6+ impactful projects including AI-powered systems and blockchain applications. 
+      Strong foundation in database design, system integration, and agile development practices. 
+      Seeking Software Engineer roles to contribute to innovative engineering teams.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <span class="skill-label">Languages:</span>
+        <span class="skill-items">Java, Python, JavaScript, SQL</span>
+      </div>
+      <div class="skill-category">
+        <span class="skill-label">Backend:</span>
+        <span class="skill-items">Spring Boot, Node.js, Express.js, REST APIs</span>
+      </div>
+      <div class="skill-category">
+        <span class="skill-label">Frontend:</span>
+        <span class="skill-items">React.js, HTML5, CSS3, Tailwind CSS</span>
+      </div>
+      <div class="skill-category">
+        <span class="skill-label">Databases:</span>
+        <span class="skill-items">MySQL, Database Design, Query Optimization</span>
+      </div>
+      <div class="skill-category">
+        <span class="skill-label">Tools & DevOps:</span>
+        <span class="skill-items">Git, GitHub, VS Code, Eclipse, Postman</span>
+      </div>
+      <div class="skill-category">
+        <span class="skill-label">Other:</span>
+        <span class="skill-items">Blockchain, IoT, AI/ML (YOLO, OpenCV)</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Professional Experience</h2>
+    
+    <div class="entry">
+      <div class="entry-header">
+        <div>
+          <span class="entry-title">Web Development Intern</span>
+          <span class="entry-company"> | Varuna Power & Infra</span>
+        </div>
+        <span class="entry-date">Internship</span>
+      </div>
+      <ul class="entry-points">
+        <li>Developed 3+ enterprise web modules (housekeeping, travel desk, restaurant management) improving operational efficiency</li>
+        <li>Built and integrated RESTful APIs using Node.js/Express backend connected to MySQL database</li>
+        <li>Implemented responsive React frontend components with optimized state management</li>
+        <li>Performed debugging and performance optimization, reducing page load times by 25%</li>
+        <li>Collaborated with cross-functional teams using Agile methodology</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div>
+          <span class="entry-title">SQL Intern</span>
+          <span class="entry-company"> | HUBBLEMIND</span>
+        </div>
+        <span class="entry-date">Internship</span>
+      </div>
+      <ul class="entry-points">
+        <li>Wrote and optimized complex SQL queries for data retrieval and business reporting</li>
+        <li>Performed data cleaning and ETL operations on large datasets (10K+ records)</li>
+        <li>Developed database optimization techniques improving query performance by 30%</li>
+        <li>Created documentation for database schemas and query patterns</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Key Projects</h2>
+    
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">AI-Powered Online Exam Monitoring System</span>
+      </div>
+      <ul class="entry-points">
+        <li>Built real-time exam proctoring system using YOLO object detection and Face Recognition</li>
+        <li>Implemented multi-face detection, gaze tracking, and automated cheating flagging with 95% accuracy</li>
+        <li>Developed Flask REST API backend with React dashboard for administrators</li>
+      </ul>
+      <p class="tech-stack"><strong>Tech:</strong> Python, YOLO, OpenCV, Face Recognition, Flask, React</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">E-commerce Platform (Full Stack)</span>
+      </div>
+      <ul class="entry-points">
+        <li>Designed and developed complete e-commerce solution with Java Spring Boot microservices</li>
+        <li>Implemented JWT authentication, product catalog, cart system, and order management</li>
+        <li>Built responsive React frontend with Redux state management</li>
+      </ul>
+      <p class="tech-stack"><strong>Tech:</strong> Java, Spring Boot, MySQL, React, JWT, REST API</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Blockchain-Based Charity Donation System</span>
+      </div>
+      <ul class="entry-points">
+        <li>Created transparent donation platform using Ethereum blockchain for immutable transaction records</li>
+        <li>Developed smart contracts in Solidity ensuring donation traceability and fraud prevention</li>
+        <li>Built Web3.js integration with Node.js backend and React frontend</li>
+      </ul>
+      <p class="tech-stack"><strong>Tech:</strong> Blockchain, Solidity, Web3.js, Ethereum, Node.js, React</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">IoT Smart Circuit Breaker System</span>
+      </div>
+      <ul class="entry-points">
+        <li>Developed intelligent home automation for remote monitoring and control of electrical circuits</li>
+        <li>Implemented real-time power consumption tracking and overload protection alerts</li>
+      </ul>
+      <p class="tech-stack"><strong>Tech:</strong> IoT, Arduino, Node.js, MQTT, Firebase, React Native</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Education</h2>
+    <div class="edu-entry">
+      <div>
+        <span class="edu-degree">Master of Computer Applications (MCA)</span>
+        <p class="edu-school">Visvesvaraya Technological University (VTU)</p>
+      </div>
+      <span class="entry-date">Completed</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Certifications</h2>
+    <div class="cert-list">
+      <div class="cert-item">Introduction to Artificial Intelligence <span class="cert-issuer">- IBM</span></div>
+      <div class="cert-item">Data Analytics Simulation <span class="cert-issuer">- Deloitte</span></div>
+      <div class="cert-item">Privacy & Security in Online Social Media <span class="cert-issuer">- VTU</span></div>
+    </div>
+  </section>
+
+</body>
+</html>
